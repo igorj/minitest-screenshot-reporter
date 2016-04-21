@@ -1,4 +1,5 @@
 require 'capybara/dsl'
+require 'minitest/reporters/screenshot'
 
 # Use with capybara integration tests
 #

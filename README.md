@@ -13,7 +13,7 @@
 [coveralls]: https://coveralls.io/r/igorj/minitest-screenshot-reporter
 
 
-Minitest reporter that automatically creates a screenshot on error or failure.
+Minitest reporter that automatically creates a screenshot on error or failure. 
 
 ## Installation
 
@@ -45,6 +45,8 @@ Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new,
 ```
 
 Run your tests, and if there are errors or failures in your integration tests, check the directory *test/screenshots*.
+
+You can also include the `Minitest::Reporters::Screenshot` module to your integration test class. Than you can use the method `screenshot(name)` to explicitly create additional screenshots in *test/screenshots* in your integration tests.     
 
 ## Development
 
