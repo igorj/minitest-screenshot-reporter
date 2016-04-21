@@ -13,7 +13,7 @@
 [coveralls]: https://coveralls.io/r/igorj/minitest-screenshot-reporter
 
 
-TODO Description of MinitestScreenshotReporter
+Minitest reporter that automatically creates a screenshot on error or failure.
 
 ## Installation
 
@@ -33,7 +33,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO Describe how to use this gem
+Use as any other minitest reporter with `Minitest::Reporters.use!
+
+Example: Add following to your *test_helper.rb*:
+
+```ruby
+require 'minitest/reporters'
+require 'minitest/reporters/screenshot_reporter'
+Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new,
+                          Minitest::Reporters::ScreenshotReporter.new]
+```
+
+Run your tests, and if there are errors or failures in your integration tests, check the directory *test/screenshots*.
 
 ## Development
 

@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.version       = MinitestScreenshotReporter::VERSION
   spec.authors       = ["Igor Jancev"]
   spec.email         = ["igor@masterybits.com"]
-  spec.summary       = %q{TODO Summary what the gem is for}
-  spec.description   = %q{TODO Longer description of the gem}
+  spec.summary       = %q{Minitest reporter that automatically creates a screenshot on error or failure}
+  spec.description   = %q{Minitest reporter that automatically creates a screenshot on error or failure}
   spec.homepage      = "https://github.com/igorj/minitest-screenshot-reporter"
   spec.license       = "MIT"
 
@@ -23,5 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "geminabox", "~> 0.13"
   spec.add_development_dependency "coveralls"
 
-
+  spec.add_dependency "minitest", ">= 5.0"
+  spec.add_dependency "minitest-reporters", "~> 1.1"
+  spec.add_dependency "capybara", "~> 2.6"
 end
