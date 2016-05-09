@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
-require 'minitest-screenshot-reporter/version'
+require 'minitest_screenshot_reporter/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "minitest-screenshot-reporter"
