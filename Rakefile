@@ -21,7 +21,7 @@ end
 
 task :publish => [:build] do
   $VERBOSE = nil
-  load 'minitest-screenshot-reporter/version.rb'
+  load 'minitest_screenshot_reporter/version.rb'
   system "gem push pkg/minitest-screenshot-reporter-#{MinitestScreenshotReporter::VERSION}.gem"
 end
 
