@@ -20,16 +20,19 @@ Minitest reporter that automatically creates a screenshot on error or failure.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'minitest-screenshot-reporter'
+group :test do
+  gem 'minitest-reporters'   
+  gem 'minitest-screenshot-reporter'
+  gem 'capybara'           # dsl for browser tests
+  gem 'selenium-webdriver' # use real browser for webtests
+  gem 'poltergeist'        # headless tests with phantom.js
+end
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install minitest-screenshot-reporter
 
 ## Usage
 
