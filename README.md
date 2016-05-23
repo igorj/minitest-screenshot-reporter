@@ -13,7 +13,8 @@
 [coveralls]: https://coveralls.io/r/igorj/minitest-screenshot-reporter
 
 
-Minitest reporter that automatically creates a screenshot on error or failure. 
+Minitest reporter that automatically creates a screenshot on error or failure during capybara webtests.
+It works both in visible browser tests, as well as with headless tests.  
 
 ## Installation
 
